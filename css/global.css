@@ -24,6 +24,8 @@ a {
 }
 
 .wrapper {
+    display: flex;
+    justify-content: center;
     width: 100%;
     padding: 25px 0;
 }
@@ -37,13 +39,21 @@ body > header {
 header .logo-search form  {
     width: 50%;
 }
-
+header .logo-search{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 header .user {
-    float: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 header .user a {
-    font-size: 13px;
+    font-size: 0.8em;
     color: #89949b;
     padding-top: 5px;
 }
@@ -60,7 +70,7 @@ main article {
 h3 {
     color: #b8c3c9;
     text-transform: uppercase;
-    font-size: 11px;
+    font-size: 0.8rem!important;
     font-weight: normal;
     margin-bottom: 10px;
 }
@@ -104,11 +114,17 @@ h1 {
 .name p img { 
     margin-left: 12px;
 }
+.name-photo{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
 
 
 .stats-links {
+    display: flex;
     color: #4b5c66;
-    font-size: 12px;
+    font-size: 0.9em;
     padding: 15px 0px 10px 0px;
     border-bottom: 1px solid #e1e6e9;
     margin-bottom: 20px;
@@ -123,7 +139,7 @@ h1 {
 }
 
 .stats-links a {
-    font-size: 12px;
+    font-size: 0.8em;
     font-weight: normal;
     color: #4b5c66;
 }
@@ -137,12 +153,14 @@ h2 {
 header form {
     width: 100%;
 }
-
+form.col-6{
+    padding: 0px;
+}
 input.search {
     background: url("../img/icon/search.png") #ebeff1 no-repeat 8px;
     box-shadow: none;
     height: 28px;
-    width: 100%;
+    width: 50%;
     font-size: 13px;
     padding: 3px 6px 3px 25px;
     border: 1px solid #d0dde9;
@@ -180,7 +198,9 @@ input.submit {
     color: #89949b;
     margin: 10px 0;
 }
-
+#albums section{
+    width: 100%;
+}
 #albums article img {
     border: 1px solid #cbcbcb;
     transition: all 0.3s;
@@ -214,7 +234,21 @@ nav.browse a, nav.music a {
     padding-left: 20px;
     padding-top: 2px;
 }
-
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin:0px;
+    padding: 0px;
+}
+.top-album{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
 nav a.heavy { background: url("../img/icon/heavy.png") no-repeat 0px; }
 nav a.recent { background: url("../img/icon/recent.png") no-repeat 0px; }
 nav a.top { background: url("../img/icon/top.png") no-repeat 0px; }
